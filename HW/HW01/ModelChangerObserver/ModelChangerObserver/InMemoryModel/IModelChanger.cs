@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ModelChangerObserver.InMemoryModel
 {
-  internal interface Interface1
+  internal interface IModelChanger
   {
+    public void NotifyChange(IModelChanger sender);
   }
 }
