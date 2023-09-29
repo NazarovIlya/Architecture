@@ -16,7 +16,7 @@ namespace ModelChangerObserver.ModelElements
     {
       this.textures = textures;
       this.poligons = new List<Poligon>();
-      this.textures.Add(new Texture());
+      this.poligons.Add(new Poligon());
     }
   }
 }
