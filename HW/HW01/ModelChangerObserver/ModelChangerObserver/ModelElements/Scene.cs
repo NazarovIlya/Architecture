@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ModelChangerObserver.ModelElements
 {
-  internal class Class1
+  internal class Scene
   {
+    public int id;
   }
 }
