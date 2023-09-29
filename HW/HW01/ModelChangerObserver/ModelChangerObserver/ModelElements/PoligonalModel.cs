@@ -15,8 +15,10 @@ namespace ModelChangerObserver.ModelElements
     public PoligonalModel(List<Texture> textures)
     {
       this.textures = textures;
-      this.poligons = new List<Poligon>();
-      this.poligons.Add(new Poligon());
+      this.poligons = new List<Poligon>
+      {
+        new Poligon()
+      };
     }
   }
 }
