@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ModelChangerObserver.InMemoryModel
 {
-  internal class ModelStore
+  internal class ModelStore : IModelChanger
   {
     public List<PoligonalModel> models;
     public List<Scene> scenes;
@@ -36,6 +36,9 @@ namespace ModelChangerObserver.InMemoryModel
       return null;
     }
 
-
+    public void NotifyChange(IModelChanger sender)
+    {
+      throw new NotImplementedException();
+    }
   }
 }
