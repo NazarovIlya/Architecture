@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModelChangerObserver.Stuff;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,12 @@ namespace ModelChangerObserver.ModelElements
 {
   internal class Poligon
   {
+    public List<Point3D> points;
+
+    public Poligon()
+    {
+      this.points = new List<Point3D>();
+      points.Add(new Point3D());
+    }
   }
 }

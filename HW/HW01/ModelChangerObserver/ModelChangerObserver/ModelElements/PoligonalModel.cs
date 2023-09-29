@@ -9,5 +9,14 @@ namespace ModelChangerObserver.ModelElements
 {
   internal class PoligonalModel
   {
+    public List<Poligon> poligons;
+    public List<Texture> textures;
+
+    public PoligonalModel(List<Texture> textures)
+    {
+      this.textures = textures;
+      this.poligons = new List<Poligon>();
+      this.textures.Add(new Texture());
+    }
   }
 }

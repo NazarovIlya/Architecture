@@ -13,9 +13,9 @@ namespace ModelChangerObserver.InMemoryModel
     public List<Scene> scenes;
     public List<Flash> flashes;
     public List<Camera> cameras;
-    private IModelChangerObserver changerObserver;
+    private IModelChangerObserver[] changerObserver;
 
-    public ModelStore(IModelChangerObserver changerObserver)
+    public ModelStore(IModelChangerObserver[] changerObserver)
     {
       this.changerObserver = changerObserver;
       this.models = new List<PoligonalModel>();
@@ -38,7 +38,7 @@ namespace ModelChangerObserver.InMemoryModel
 
     public void NotifyChange(IModelChanger sender)
     {
-      throw new NotImplementedException();
+        
     }
   }
 }
