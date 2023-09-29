@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace ModelChangerObserver.ModelElements
 {
-  internal class Camera
+  internal class Camera : VectorAbstractBase
   {
+    public Camera() { }
   }
 }
