@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AbstractFabricWithInterface.Factories
 {
-  internal abstract class ItemGenerator
+  internal abstract class ItemFactory
   {
     public abstract IGameItem CreateItem();
 

@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace AbstractFabricWithInterface.Factories
 {
-  internal class GoldFactory : ItemFactory
+  internal class PearlFactory : ItemFactory
   {
     public override IGameItem CreateItem()
     {
-      return new Gold();
+      return new Pearl();
     }
   }
 }

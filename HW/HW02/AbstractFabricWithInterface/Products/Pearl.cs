@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractFabricWithInterface.Products
 {
-    internal class Perl : RewardItem
+    internal class Pearl : RewardItem
     {
     }
 }
