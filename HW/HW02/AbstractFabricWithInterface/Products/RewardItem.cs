@@ -11,7 +11,7 @@ namespace AbstractFabricWithInterface.Products
   {
     public void Open()
     {
-      Console.WriteLine($"Вы получили в награду {GetType().Name}");
+      Console.WriteLine($"You have received a reward {GetType().Name.ToUpper()} award!");
     }
   }
 }
