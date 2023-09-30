@@ -18,10 +18,16 @@ namespace ModelChangerObserver.InMemoryModel
     public ModelStore(IModelChangerObserver[] changerObserver)
     {
       this.changerObserver = changerObserver;
-      this.models = new List<PoligonalModel>();
-      this.scenes = new List<Scene>();
-      this.flashes = new List<Flash>();
-      this.cameras = new List<Camera>();
+      models = new List<PoligonalModel>();
+      scenes = new List<Scene>();
+      flashes = new List<Flash>();
+      cameras = new List<Camera>();
+
+      models.Add(new PoligonalModel(
+        new List<Texture> { new Texture() }));
+      flashes.Add(new Flash());
+      cameras.Add(new Camera());
+      scenes.Add(new Scene(0, models, flashes, cameras));
     }
 
     public Scene? GetScena(int id)
@@ -38,7 +44,7 @@ namespace ModelChangerObserver.InMemoryModel
 
     public void NotifyChange(IModelChanger sender)
     {
-        
+      throw new NotImplementedException();
     }
   }
 }
