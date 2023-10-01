@@ -16,7 +16,6 @@ namespace ModelChangerObserver.ModelElements
     public Scene(int id, List<PoligonalModel> models, List<Flash> flashes, List<Camera> cameras)
     {
       this.id = id;
-      this.models = models;
       if (models.Count > 1)
       {
         this.models = models;
