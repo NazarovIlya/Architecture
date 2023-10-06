@@ -3,5 +3,5 @@ using SRP;
 
 Console.WriteLine("Hello, World!");
 
-Employee employee = new("Yana", "06/10/2023");
-Console.WriteLine(employee);
+Employee employee = new Employee("Yana", "06/10/2023");
+Console.WriteLine(employee.ToString());
