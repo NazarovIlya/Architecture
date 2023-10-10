@@ -8,6 +8,7 @@ import java.util.Date;
 public class Ticket {
 
     private long id;
+    private Date date;
     private int routeNumber;
     private int zoneStart;
     private int zoneStop;
