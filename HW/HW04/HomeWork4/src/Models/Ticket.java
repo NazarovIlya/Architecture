@@ -5,9 +5,18 @@ import java.util.Date;
 /**
  * Модель билета
  */
-public class Ticket{
+public class Ticket {
 
-
+    private long id;
+    private int routeNumber;
+    private int zoneStart;
+    private int zoneStop;
+    private int price;
+    private Date timeStart;
+    private Date timeStop;
+    private boolean isValid;
+    private boolean isUsed;
+    private int place;
 
     public Ticket(int routeNumber, int place, int price, Date date, boolean isValid) {
         this.routeNumber = routeNumber;
@@ -16,7 +25,6 @@ public class Ticket{
         this.date = date;
         this.isValid = isValid;
     }
-
 
     @Override
     public String toString() {
@@ -27,7 +35,6 @@ public class Ticket{
                 ", Date " + date +
                 ", " + (isValid ? "Free" : "Busy");
     }
-
 
     public String toPrint() {
         return "Ticket" +
@@ -50,7 +57,6 @@ public class Ticket{
         return this.equals((Ticket) obj);
     }
 
-
     public boolean equals(Ticket ticket) {
         boolean isIt = ticket != null
                 && ticket.getRouteNumber() == this.routeNumber
@@ -63,5 +69,45 @@ public class Ticket{
             return true;
         }
         return false;
+    }
+
+    public int getRouteNumber() {
+        return routeNumber;
+    }
+
+    public void setZoneStart(int zoneStart) {
+        this.zoneStart = zoneStart;
+    }
+
+    public void setZoneStop(int zoneStop) {
+        this.zoneStop = zoneStop;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public boolean isValid() {
+        return isValid;
+    }
+
+    public void setValid(boolean isValid) {
+        this.isValid = isValid;
+    }
+
+    public boolean isUsed() {
+        return isUsed;
+    }
+
+    public void setUsed(boolean isUsed) {
+        this.isUsed = isUsed;
+    }
+
+    public int getPlace() {
+        return place;
     }
 }
